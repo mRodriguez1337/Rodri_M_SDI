@@ -11,8 +11,8 @@ var visitorsName = window.prompt("Please enter you name:");   //visitor will be 
 
 //Getting host and visitor gender
 var hostGender = "Male";
-var getVisitorsGender = alert("are you Male ?");
-if(getVisitorsGender == true){
+var getVisitorsGender = window.prompt("are you Male ?");
+if(getVisitorsGender == "yes"){
 	var visitorsGender = "Male"
 }else{
 	visitorsGender = "Female"
