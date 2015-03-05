@@ -36,7 +36,7 @@ var hostChildren = true ;
 var hostNumberOfKids = 1 ;
 var getVisitorsChildren = window.prompt("Do you have kids ? ");  //visitor will be asked if they have children
 
-if ((getVisitorsChildren == 'yes')||(getVisitorsChildren == 'YES')){
+if ((getVisitorsChildren == 'yes')||(getVisitorsChildren == 'YES')){ 
     
     var visitorsChildren = true;
     var getNumberOfKids = window.prompt("How many children do you have?");  //how many children visitor has
