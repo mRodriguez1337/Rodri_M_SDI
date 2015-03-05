@@ -39,7 +39,7 @@ var getVisitorsChildren = window.prompt("Do you have kids ? ");  //visitor will 
 if ((getVisitorsChildren == 'yes')||(getVisitorsChildren == 'YES')){
     
     var visitorsChildren = true;
-    var getNumberOfKids = window.prompt("How many children do you have?");  //number of visitor's children
+    var getNumberOfKids = window.prompt("How many children do you have?");  //how many children visitor has
     var visitorsNumberOfKids = Number(getNumberOfKids);
         
 } else if((getVisitorsChildren == 'no')||(getVisitorsChildren == 'NO')){
@@ -51,3 +51,10 @@ if ((getVisitorsChildren == 'yes')||(getVisitorsChildren == 'YES')){
 document.writeln("Hello there, I am " + hostName + " Welcome to my page " + visitorsName);
 document.write("<br>");
 document.writeln("I am an " + hostProfession + " who loves Technology and Web ");
+document.write("<br>")
+if(visitorsProfession === hostProfession){
+	document.writeln("I see that you are working in the same field as me Colleague, nice to meet you");
+}else{
+	document.writeln("Very interesting to meet people with your career, you never know when you would need an expert");
+}
+
