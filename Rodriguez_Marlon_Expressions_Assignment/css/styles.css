@@ -6,17 +6,45 @@ Professor Lee Lewis
 created by Marlon Rodriguez
 */
 
-.content{
+.header{
+		text-align:center;
+		color:#FFF;
 		background-color:#CCC;
-		width:800px;
+		margin: 0px;
+		
 }
 
-.content .vegetables li {
-							text-align: left;
+.content{
+		
+		max-width: 100%;
+        margin: 0 px;
+        font-size: 15px;
+        line-height: 27px;
+        padding: 0px;
+		margin: 0px;
 }
 
-.content .fruits li{
-	              text-align:right;
+.content .vegetables {
+					  
+					  margin: 10px;
+                      float: left;
+                      width: 300px;
+                      padding: 5px;
+					  color:#FFF;
+					  text-align:center;
+					  background-color:#CCC;
+
+}
+
+.content .fruits {
+	              margin: 10px;
+                  float: right;
+                  width: 300px;
+                  padding: 5px;
+			      color:#FFF;
+				  text-align:center;
+				  background-color:#CCC;
+				  
 }
 
 ul {
@@ -28,6 +56,7 @@ ul {
 
 
 p {
+	text-align:center;
 	font-size: medium;
 }
 
