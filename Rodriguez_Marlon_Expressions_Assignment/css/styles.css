@@ -16,19 +16,18 @@ created by Marlon Rodriguez
 
 .content{
 		
-		max-width: 100%;
-        margin: 0 px;
-        font-size: 15px;
-        line-height: 27px;
+		max-width:100%;
+		margin: 0 px;
         padding: 0px;
 		margin: 0px;
+		border: 0px;
 }
 
 .content .vegetables {
 					  
-					  margin: 10px;
+					  margin-top: 10px;
                       float: left;
-                      width: 300px;
+                      width: 25%;
                       padding: 5px;
 					  color:#FFF;
 					  text-align:center;
@@ -37,15 +36,31 @@ created by Marlon Rodriguez
 }
 
 .content .fruits {
-	              margin: 10px;
+	              margin-top: 10px;
                   float: right;
-                  width: 300px;
+                  width: 25%;
                   padding: 5px;
 			      color:#FFF;
 				  text-align:center;
 				  background-color:#CCC;
 				  
 }
+
+.total {
+		          
+				  margin-top: 5px;
+				  margin-left:35%;
+                  width: 30%;
+				  height:300px;
+                  padding: 5px;
+			      color:#FFF;
+				  background-color:#CCC;
+				  text-align:center;
+				  
+		
+}
+		
+		
 
 ul {
 	list-style-type: none;
