@@ -1,3 +1,34 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document Document
+Scalable Data Infrastructures Sec 02
+Expressions Assignment
+Professor Lee Lewis
+created by Marlon Rodriguez
+*/
+
+.content{
+		background-color:#CCC;
+		width:800px;
+}
+
+.content .vegetables li {
+							text-align: left;
+}
+
+.content .fruits li{
+	              text-align:right;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+
+
+p {
+	font-size: medium;
+}
+
 
