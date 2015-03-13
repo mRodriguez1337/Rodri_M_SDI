@@ -7,9 +7,14 @@ created by Marlon Rodriguez
 
 //Creating Variables
 var total = 0 ;
-var apples = 0, mangos = 0, oranges = 0, papayas = 0, pears = 0, straw = 0;
-var carrots = 0, cucum = 0, peppers = 0, plantains = 0, potatoes = 0, tomatoes = 0;
+var applesPriceEach = 1.50, mangosPriceEach = 3, orangesPriceEach = 3, papayasPriceEach = 7, pearsPriceEach = 2.50;
+var carrotsPriceEach = 2, cucumPriceEach = 3, peppersPriceEach = 2.50, plantainsPriceEach = 1.50, tomatoesPriceEach = 2;
+var applesCounter = 0, mangosCounter = 0, orangesCounter = 0, papayasCounter = 0, pearsCounter = 0, strawCounter = 0;
+var carrotsCounter = 0, cucumCounter = 0, peppersCounter = 0, plantainsCounter = 0, potatoesCounter = 0, tomatoesCounter = 0;
 var costOfFruits = [];
 var costOfVegetables = [];
+
+//user input
+var customerName = window.prompt("Hello welcome to SDI Micro Market, please enter your name :");
  
  
