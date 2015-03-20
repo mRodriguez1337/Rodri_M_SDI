@@ -26,13 +26,17 @@ var buyingVideoGames = confirm("Do you want to buy some Video Games today ?");
 
 while(buyingVideoGames === true){
 	 							if(customerAge < 10){
+									
 									alert("You can only buy E rated Video Games");
-									var desiredVideoGameTitle = window.prompt("Please enter a number of the game in the Rated E row : ");
-									var videogamePosition = Number
+									var desiredVideoGameTitle = window.prompt("Please enter the title of the wanted game from Rated E row: ");
+									shoppingCart += 25;
+									
 									
 								}else if((customerAge >= 10) && (customerAge < 21)){
+									
 									alert("You can buy E and T rated Video Games");
 									desiredVideoGameTitle = window.prompt("Please enter the title of the game: ");
+									
 									}else{
 										  	alert("You can buy any rated Video Games");
 									        desiredVideoGameTitle = window.prompt("Please enter the title of the game: ");
@@ -41,8 +45,21 @@ while(buyingVideoGames === true){
 									  purchasedVideoGames.push(desiredVideoGameTitle);
 									  buyingVideoGames = confirm("Buying more Video Games today ?");
 								}
-								console.log(purchasedVideoGames);
-								console.log(shoppingCart);
+								
+								
+document.getElementById("line1").innerHTML = ("Thank you for shopping in SDI Video Game Store " + customerName);
+console.log("Thank you for shopping in SDI Video Game Store " + customerName);
+document.getElementById("line2").innerHTML = ("Here is your receipt with total and video games titles you got: ");
+console.log("Here is your receipt with total and video games titles you got:"); 
+
+document.getElementById("line3").innerHTML = ("Games you buy today = " + purchasedVideoGames);
+console.log("Games you buy today = " + purchasedVideoGames);
+document.getElementById("line4").innerHTML = ("Total of your purchase is " + shoppingCart);
+console.log("Total of your purchase is " + shoppingCart);
+								
+console.log(purchasedVideoGames);
+console.log(shoppingCart);
+								
 								
 								
 								
