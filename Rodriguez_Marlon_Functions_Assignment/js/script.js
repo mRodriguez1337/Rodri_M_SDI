@@ -129,5 +129,5 @@ if(myName != ""){   // condition depending on name entered, if true then keeps r
 					 	
 }
 
-
+console.log("YES");
 
