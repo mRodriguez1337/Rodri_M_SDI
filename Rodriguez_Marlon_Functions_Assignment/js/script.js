@@ -96,9 +96,8 @@ function randomPowerball(max, min){
 //Main code
 myName = prompt("Enter your name please: ");
 myName = nameValidation(myName);
-
+console.log("Welcome to our drawing lottery website " + myName);
 if(myName != ""){
-				 console.log("Welcome to our drawing lottery website " + myName);
                  wantToPlay = prompt("Do you want to play the lottery ? ");
                  wantToPlay = playValidation(wantToPlay);
                  if((wantToPlay === "Yes") || (wantToPlay === "yes") || (wantToPlay === "y") || (wantToPlay === "Y")){
@@ -110,14 +109,12 @@ if(myName != ""){
 										
 				                                                        playingNums = randomNumGen(53, 1, 5);
                                                                         console.log("Here are your lucky numbers " + playingNums);
-																		console.log(" !!! GOOD LUCK !!! ");
 																		
 										                }else if((myLotteryName === "Powerball")||(myLotteryName === "powerball")){
 																		playingNums = randomNumGen(59, 1, 5);
 																		powerballNumber = randomPowerball(35, 1);
                                                                         console.log("Here are your lucky numbers " + playingNums);
-																		console.log("This is your lucky PowerBall Number " + powerballNumber);
-																		console.log(" !!! GOOD LUCK !!! ");
+																		console.log("This is you lucky PowerBall Number " + powerballNumber);
 														}else{
 																console.log("I think you just want to waste our precious time. GOOD BYE !!");
 																
@@ -127,6 +124,5 @@ if(myName != ""){
 				 }
 					 	
 }
-
 
 
