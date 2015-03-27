@@ -9,19 +9,26 @@ created by Marlon Rodriguez
 var myName; 
 var wantToPlay;
 var playingNums;
+var myLotteryName;
+
 
 //Functions Declarations
 // Validating Name of the User
-function nameValidation(firstName, flag) {
+function nameValidation(firstName) {
 	
 	           var timesClicked = 1;
+			   var code;
                while (firstName === ""){
                                      firstName = prompt("Do not leave this blank. \n\n Please enter your first name");
 									 timesClicked++;
 									 if(timesClicked === 5) {
 										 console.log("Thank you for visiting our lottery website,\ncomeback when you decide to play !");
 										 flag = 1;
-										 break;	
+										 if(flag === 0){
+											 		playValidation(code);
+										 }else{
+										        break;
+													}
 										   }
                                        }
                   return firstName;
@@ -29,10 +36,9 @@ function nameValidation(firstName, flag) {
 }
 
 //Validating If User Wants to Play the Lottery
-
 function playValidation(confirmPlay){
 					
-						var timesClicked = 1						
+						          var timesClicked = 1;						
 						           while (confirmPlay === ""){
                                      confirmPlay = prompt("Do not leave this blank. \nPlease confirm if you want to play: ");
 									 timesClicked++;
@@ -43,6 +49,21 @@ function playValidation(confirmPlay){
                                                    }
 									return confirmPlay;			   
 }
+
+
+//Validating What Lottery User Wants to Play
+function lotteryTypeValidation(lotteryType){
+								  var timesClicked = 1;						
+						           while (lotteryType === ""){
+									   lotteryType = prompt("Do not leave this blank. \nPlease enter what lottery you want to play: ");
+									 timesClicked++;
+									                    if(timesClicked === 5) {
+										                      console.log("Thank you for visiting our lottery website,\ncomeback when you decide to play !");
+										                      break;
+									                                           }
+								                             }
+}
+
 
 //Generating Random Numbers
 function randomNumGen(max, min, num) {
@@ -61,13 +82,19 @@ function randomNumGen(max, min, num) {
 
 
 //Main code
-/*myName = prompt("Enter your name please: ");
+myName = prompt("Enter your name please: ");
 myName = nameValidation(myName);
 console.log(myName);
+if(myName != ""){
+                 wantToPlay = prompt("Do you want to play the lottery ? ");
+                 wantToPlay = playValidation(wantToPlay);
+                 console.log(wantToPlay);
 
-wantToPlay = prompt("Do you want to play the lottery ? ");
-wantToPlay = playValidation(wantToPlay);
-console.log(wantToPlay); */
+                 if((wantToPlay === "Yes") || (wantToPlay === "yes") || (wantToPlay === "y") || (wantToPlay === "Y")){
+				                       playingNums = randomNumGen(53, 1, 5);
+                                       console.log(playingNums);
+				 }
+					 	
+}
 
-playingNums = randomNumGen(53, 1, 5);
-console.log(playingNums);
+
