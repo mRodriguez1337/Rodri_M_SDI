@@ -10,6 +10,7 @@ var myName;
 var wantToPlay;
 var playingNums;
 var myLotteryName;
+var powerballNumber;
 
 
 //Functions Declarations
@@ -55,13 +56,14 @@ function playValidation(confirmPlay){
 function lotteryTypeValidation(lotteryType){
 								  var timesClicked = 1;						
 						           while (lotteryType === ""){
-									   lotteryType = prompt("Do not leave this blank. \nPlease enter what lottery you want to play: ");
-									 timesClicked++;
-									                    if(timesClicked === 5) {
-										                      console.log("Thank you for visiting our lottery website,\ncomeback when you decide to play !");
-										                      break;
+									                  lotteryType = prompt("Do not leave this blank. \nPlease enter what lottery you want to play \n Florida or Powerball: ");
+									                  timesClicked++;
+									                   if(timesClicked === 5) {
+										                                console.log("Thank you for visiting our lottery website,\ncomeback when you decide to play !");
+										                                break;
 									                                           }
 								                             }
+															 return lotteryType;
 }
 
 
@@ -78,21 +80,47 @@ function randomNumGen(max, min, num) {
 						return randomArray;	
 }
 
+//Generating Random Powerball
+function randomPowerball(max, min){
+	
+					var myRandomPW = Math.round(Math.random() * (max - min) + min);
+					return myRandomPW;
+}
+					
+					
+						
 
-
+/******************************************************************************************************************************************************************************************
+*********************************************************************************************************************************************************************************************/
 
 //Main code
 myName = prompt("Enter your name please: ");
 myName = nameValidation(myName);
-console.log(myName);
+console.log("Welcome to our drawing lottery website " + myName);
 if(myName != ""){
                  wantToPlay = prompt("Do you want to play the lottery ? ");
                  wantToPlay = playValidation(wantToPlay);
-                 console.log(wantToPlay);
-
                  if((wantToPlay === "Yes") || (wantToPlay === "yes") || (wantToPlay === "y") || (wantToPlay === "Y")){
-				                       playingNums = randomNumGen(53, 1, 5);
-                                       console.log(playingNums);
+					 					myLotteryName = prompt("What lottery do you want to play \n Florida or PowerBall ?");
+										myLotteryName = lotteryTypeValidation(myLotteryName);
+										console.log("The lottery you are playing today is " + myLotteryName);
+										
+										if((myLotteryName === "Florida") || (myLotteryName === "florida")){
+										
+				                                                        playingNums = randomNumGen(53, 1, 5);
+                                                                        console.log("Here are your lucky numbers " + playingNums);
+																		
+										                }else if((myLotteryName === "Powerball")||(myLotteryName === "powerball")){
+																		playingNums = randomNumGen(59, 1, 5);
+																		powerballNumber = randomPowerball(35, 1);
+                                                                        console.log("Here are your lucky numbers " + playingNums);
+																		console.log("This is you lucky PowerBall Number " + powerballNumber);
+														}else{
+																console.log("I think you just want to waste our precious time. GOOD BYE !!");
+																
+														}
+																
+																					
 				 }
 					 	
 }
