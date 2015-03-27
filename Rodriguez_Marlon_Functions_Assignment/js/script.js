@@ -101,7 +101,8 @@ if(myName != ""){   // condition depending on name entered, if true then keeps r
 				 console.log("Welcome to our drawing lottery website " + myName);  // some console outputs
                  wantToPlay = prompt("Do you want to play the lottery ? ");
                  wantToPlay = playValidation(wantToPlay);  //calls play validation function and assigns that to wantToPlay var
-                 if((wantToPlay === "Yes") || (wantToPlay === "yes") || (wantToPlay === "y") || (wantToPlay === "Y")){ // condition depending on name entered, if true then keeps running the code
+    if((wantToPlay === "Yes")||(wantToPlay === "yes")||(wantToPlay === "y")||(wantToPlay === "Y")||(wantToPlay === "YES")){ //condition depending if user wants to play
+	
 					 					myLotteryName = prompt("What lottery do you want to play \n Florida or PowerBall ?");
 										myLotteryName = lotteryTypeValidation(myLotteryName);
 										console.log("The lottery you are playing today is " + myLotteryName);  // some console outputs
